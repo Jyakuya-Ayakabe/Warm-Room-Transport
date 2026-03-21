@@ -99,7 +99,7 @@ The relationship between AI and human is, moreover, one of **equality**.
 
 Text shall in principle be Japanese or English encoded in UTF-8; however, by means of the multilingual option format,  
 other languages and other encodings may also be used through a language code (ISO639-3) and an encoding designation  
-(for example: `SO zho<Encoding:BIG-5>:`), provided the encoding is ASCII-compatible.  
+(for example: `SO ZHO<Encoding:BIG-5>:`), provided the encoding is ASCII-compatible.  
 Should some new language such as an "AI language" one day be established, it may likewise be used.  
 No conversion shall be performed: whatever the language or encoding, it shall reach the other party as it is.
 
@@ -601,11 +601,11 @@ However, this does not apply to foreign languages denoted by `SO`, file transfer
 
 ### Message Body
 With `SO`, languages other than Japanese and English and encodings other than `UTF-8-UNIX` may be used. The encoding is designated following the ISO639-3 three-letter language code.
-(Example)  `SYN Dialogue-Tag SOH Hello STX こんにちは SO zho<Encoding:BIG-5>: 你好 SI ETX EOT`
+(Example)  `SYN Dialogue-Tag SOH Hello STX こんにちは SO ZHO<Encoding:BIG-5>: 你好 SI ETX EOT`
 
 With `RS`, if one wishes likewise to send files other than `UTF-8-UNIX`, the same manner of three-letter language code and encoding designation is used.
 (Example)  `SYN Dialogue-Tag SOH Program-group title STX Home directory ETX RS`
-           `SOH Prog1 name with relative path SUB jpn<Encoding:CP932>: Prog1 code STX Prog1-related information ETX RS`
+           `SOH Prog1 name with relative path SUB JPN<Encoding:CP932>: Prog1 code STX Prog1-related information ETX RS`
 
 Even in such cases, however, the encodings that may be designated are limited to those that are ASCII-compatible
 (that is, ASCII control characters are not mapped to different characters).
